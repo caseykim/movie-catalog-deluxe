@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Actor</title>
+    <link rel="stylesheet" href="/home.css">
+  </head>
+
+  <body>
+    <h1>
+      <%=actor.name%>
+    </h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Movie</th>
+          <th>Character</th>
+        </tr>
+      </thead>
+      <tbody>
+        <%details.each do |detail|%>
+          <tr>
+            <td><a href="/movies/<%=detail.movie_id%>"><%=detail.movie%></a></td>
+            <td><%=detail.character%></td>
+          </tr>
+        <%end%>
+      </tbody>
+    </table>
+
+    <br />
+    <a href="/actors">All Actors</a>
+  </body>
+</html>

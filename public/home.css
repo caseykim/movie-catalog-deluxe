@@ -1,0 +1,27 @@
+body {
+  background-color: #88ABC2;
+  font-family: 'Cambo', serif;
+  font-size: 13pt;
+}
+h1 {
+  text-align: center;
+  text-shadow:
+    -1.5px -1.5px 0 #ffffff,
+    1.5px -1.5px 0 #ffffff,
+    -1.5px 1.5px 0 #ffffff,
+    1.5px 1.5px 0 #ffffff;
+}
+table {
+  margin: auto;
+  padding: 0px;
+  background-color: rgb(255, 255, 255);
+}
+th {
+  padding: 0px;
+  background: rgb(199, 199, 199);
+}
+p {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 16pt;
+}

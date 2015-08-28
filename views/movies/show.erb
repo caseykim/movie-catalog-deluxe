@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movie Catalog</title>
+    <link rel="stylesheet" href="/home.css">
+  </head>
+
+  <body>
+    <h1>Movie</h1>
+    <p>Genre: <%=movie.genre%>  /  Studio: <%=movie.studio%></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>actor</th>
+          <th>character</th>
+        </tr>
+      </thead
+      <tbody>
+        <%details.each do |detail|%>
+          <tr>
+            <td><a href="/actors/<%=detail.actor_id%>"><%=detail.actor%></a></td>
+            <td><%=detail.character%></td>
+          </tr>
+        <%end%>
+      </tbody>
+    </table>
+
+    <br />
+    <a href="/movies">All Movies</a>
+
+  </body>
+</html>
